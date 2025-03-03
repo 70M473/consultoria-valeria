@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria de Consórcio - Valéria</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            text-align: center;
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            color: #333;
+        }
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #3498db;
+            pointer-events: none; /* Impede interações na imagem */
+        }
+        .name {
+            font-size: 26px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .description {
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+        .buttons a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 12px 24px;
+            margin: 10px;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+            font-size: 16px;
+        }
+        .whatsapp { background-color: #25d366; }
+        .instagram { background-color: #e1306c; }
+        .facebook { background-color: #1877f2; }
+        .simule { 
+            background-color: #e74c3c; /* Fundo vermelho */
+            box-shadow: 0px 5px 15px rgba(231, 76, 60, 0.6); /* Sombras para dar destaque */
+        }
+        .buttons a:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+
+        /* Bloqueia a seleção de texto */
+        * {
+            user-select: none;
+        }
+
+    </style>
+    <script>
+        // Bloqueia o clique direito (botão direito do mouse)
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+
+        // Bloqueia o arraste de imagem
+        document.querySelectorAll("img").forEach(img => {
+            img.addEventListener("dragstart", function(e) {
+                e.preventDefault();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="valeria.jpg" alt="Valéria - Consultora de Consórcio" class="photo">
+        <div class="name">Valéria - Consultora de Consórcio</div>
+        <div class="description">Especialista em consórcios, ajudando você a conquistar seus sonhos com planejamento e segurança.</div>
+        <div class="buttons">
+            <a href="https://wa.me/message/6WYSKAWUJ7PPE1" class="whatsapp" target="_blank">WhatsApp</a>
+            <a href="https://www.instagram.com/credito_semburocracia?igsh=MW9tOTBkazkzYWI4OA==" class="instagram" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61555896328610" class="facebook" target="_blank">Facebook</a>
+            <a href="https://www.embracon.com.br/consultor/valeria-viana?uuid=eb9007e7-fb77-4aae-9d49-131bf088a8ff&login_vendedor=valeria.viana" class="simule" target="_blank">Simule aqui</a> <!-- Botão vermelho -->
+        </div>
+    </div>
+</body>
+</html>
